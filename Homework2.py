@@ -36,6 +36,7 @@ def merge_two_lists(list):
 # Write a function that will find the smallest number in a list and return it.
 # ie. [6, 2, 7, 99] returns 2. (There are two main ways you can do this, bonus points if you can find both)
 def get_smallest_number_in_list(list):
+
     pass
 
 

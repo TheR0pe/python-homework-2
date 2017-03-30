@@ -57,8 +57,11 @@ merge_two_lists(list2)
 # ie. [6, 2, 7, 99] returns 2. (There are two main ways you can do this, bonus points if you can find both)
 def get_smallest_number_in_list(list):
     # return min(list)
+    x = 100
     for i in list:
-        if i
+        if i < x:
+            x = i
+    return x
 
 
 # Write a function that will remove all even numbers from a list of numbers.

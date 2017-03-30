@@ -21,22 +21,44 @@ I will check everyones answers on the 30th or when everyone says they're done, w
 '''
 
 
+
+
+list1 = [1, 2, 3, 4, 5]
+list2 = [[1, 2, 3, 4], [5, 6, 7, 8], [9]]
+list3 = ['apple', 'banana', 'tomato']
+
 # Write a function here that will add up all the numbers into a list and return the total.
 # ie. [4, 7, 12, 16] returns 39
 def sum_all_in_list(list):
-    pass
+    return sum(list)
+    #or
+def sum_all_alt(list):
+    total = 0
+    for i in list:
+        total = total + i
+    return total
 
+sum_all_in_list(list1)
+sum_all_alt(list1)
 
 # Write a function that will merge a list of lists together. ie. [[4, 2, 6], [2, 4, 7], [9, 2, 6]]
 # becomes one list of [4, 2, 6, 2, 4, 7, 9, 2, 6]
 def merge_two_lists(list):
-    pass
+    newList =[]
+    for i in list:
+        for x in i:
+            newList.append(x)
+    return newList
+
+merge_two_lists(list2)
 
 
 # Write a function that will find the smallest number in a list and return it.
 # ie. [6, 2, 7, 99] returns 2. (There are two main ways you can do this, bonus points if you can find both)
 def get_smallest_number_in_list(list):
-    pass
+    # return min(list)
+    for i in list:
+        if i
 
 
 # Write a function that will remove all even numbers from a list of numbers.
@@ -45,20 +67,34 @@ def get_smallest_number_in_list(list):
 # ie. [2, 5, 8, 2, 3, 7] becomes [5, 3, 7]
 # If there are no odd numbers in the whole list, return an empty list
 def return_odd_numbers(list):
-    pass
+    newList =[]
+    for i in list:
+        if i %2 != 0:
+            newList.append(i)
+    return newList
+
+return_odd_numbers(list1)
 
 
 # append a string to all elements in a list and return the list of all.
 # ie. append_to_all_elements(["hey", "there", "friend"], "lol") returns ["heylol", "therelol", "friendlol"]
 def append_to_all_elements(list, string):
-    pass
+    newList = []
+    for i in list:
+        newList.append(i + string)
+    return newList
 
+append_to_all_elements(list3, "ta-dah")
 
 # return a list of each character in a string
 # ie. list_of_characters_in_string("Hello") returns ["H", "e", "l", "l", "o"]
 # Hint, doing 'for x in "string":' will loop through each character in the string.
 def list_of_characters_in_string(string):
-    pass
+    newList =[]
+    for i in string:
+        for x in i:
+            newList.append(x)
+    return newList
 
 
 # Use the space below this line to call your methods and print out the results to check you've got the answer.
